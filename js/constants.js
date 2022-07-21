@@ -1,0 +1,15 @@
+const pizzaWrapper = [...document.getElementsByClassName("pizzaWrapper")][0];
+const pizzaPlate = [...document.getElementsByClassName("pizzaImage")][0];
+const fieldForAddingBase = [...document.getElementsByClassName("base")][0];
+const fieldForAddingIngridients1 = [...document.getElementsByClassName("ingridients1")][0];
+const fieldForAddingIngridients2 = [...document.getElementsByClassName("ingridients2")][0];
+const fieldForAddingSauce = [...document.getElementsByClassName("sauce")][0];
+const fieldForRemoving = [...document.getElementsByClassName("ingridientsToRemove")][0];
+const fieldOfPrice = [...document.getElementsByClassName("price")][0];
+const typesOfComponents = ["base","ingridient1","ingridient2","sauce"];
+const orederBtn = [...document.getElementsByClassName("orderButton")][0];
+const pathesToImgs = ["img/bases/base_","img/components/","img/souses/souce_"];
+const baseImg = ["1","2","3","4"];
+const ingridientsImg = ["bacons","maslins","mushrooms","olives","pineapples","shrimps","sousages","tomatos"];
+const sauceImg = ["1","2","3","4"];
+export {fieldForAddingBase,fieldForAddingIngridients1,fieldForAddingIngridients2,fieldForAddingSauce,fieldOfPrice,typesOfComponents,baseImg,ingridientsImg,sauceImg,pathesToImgs,pizzaWrapper,pizzaPlate, fieldForRemoving,orederBtn};
