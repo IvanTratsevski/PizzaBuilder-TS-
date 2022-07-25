@@ -160,6 +160,7 @@
 .orderButton{
     position: absolute;
     right: 0;
+    bottom: 0px;
     height: 40px;
     cursor: pointer;
     background-color: #F06D43;
@@ -203,6 +204,10 @@ button:hover{
 .unorderable{
     width: 400px;
     height: 400px;
+}
+.ordered{
+    width: 300px;
+    height: 500px;
 }
 .popUpBtn{
     margin-top: 30px;
