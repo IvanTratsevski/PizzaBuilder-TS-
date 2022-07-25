@@ -6,11 +6,11 @@
     box-sizing: border-box;
 }
 .wrapper{
-    overflow: hidden;
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 .ingridientsAddBlock{
     overflow: auto;
@@ -126,7 +126,7 @@
     display: inline-block;
     font-size: 16px;
 }
-.active{
+.activeBtn{
     color: #ac4f2f;
 }
 .unactive{
@@ -151,8 +151,11 @@
 .sauce{
     z-index: 3;
 }
-.ingridient{
+.ingridient1{
     z-index: 4;
+}
+.ingridient2{
+    z-index: 5;
 }
 .orderButton{
     position: absolute;
@@ -169,8 +172,50 @@
     font-size: 16px;
     width: 40%;
 }
-.orderButton:hover{
+button:hover{
     color:#ac4f2f;
+}
+.popUpBg{
+    position: absolute;
+    background-color: rgba(1, 1, 1, 0.347);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.popUp{
+    background-color: #F78A3E;
+    border: 4px solid #F06D43;
+    position: absolute;
+    display: flex;
+    color: rgb(234, 234, 234);
+    text-align: center;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-size: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+.unorderable{
+    width: 400px;
+    height: 400px;
+}
+.popUpBtn{
+    margin-top: 30px;
+    cursor: pointer;
+    background-color: #F06D43;
+    border-bottom: 4px solid #F78A3E;
+    color: rgb(234, 234, 234);
+    padding: 10px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 40%;
 }
 @media (max-width: 800px){
     .wrapper{
